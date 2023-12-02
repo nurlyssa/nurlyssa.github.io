@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6a4443f94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Media Informatics Student</p>
+            <h1>Hello, I'm <span>Nur</span><br>Khalisah</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hello and Assalamualaikum. I am Nur Khalisah binti Mohd Kamal, a second-year degree student at UniSZA. I was born and raised in Kuala Terengganu. Right now, I'm pursuing my study in Information Technology ( Media Informatics). So for my dream, well, I've used to have a dream of becoming a web developer or graphic designer, but nowadays people are having a hard time getting their dream job, so I think that I'm just going with what was in front of me later.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('interests')">Interests</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="interests">
+                    <ul>
+                        <li><span>Coffee Lover</span><br>Addicted to coffee so bad</li>
+                        <li><span>Bookworm</span><br>Loves reading novel so much</li>
+                        <li><span>C-Drama Lover</span><br>So obsessed with C-drama </li>
+                        <li><span>F1 Lover</span><br>Very interested with Formula 1 </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Adobe Photoshop</span><br>Able to do any design using Adobe Photoshop</li>
+                        <li><span>Adobe Animate</span><br>Able to create basic animation using Adobe Animate</li>
+                        <li><span>Adobe Illustrator</span><br>Able to develop basic design using Adobe Illustrator</li>
+                        <li><span>Maya</span><br>Able to create basic 3D objects using Maya</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2015 - 2019</span><br>Sijil Pelajaran Malaysia (SPM)</li>
+                        <li><span>2020 - 2022</span><br>Diploma in Information Technology (Multimedia)</li>
+                        <li><span>2022 - Current</span><br>Bachelor's Degree in Information Technology (Media Informatics)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>3D Character</h3>
+                    <p>This is the 3D character that was create for 2D & 3D Modeling subject. This was create using Maya.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Landing Page</h3>
+                    <p>This is the landing page for Image Editing subject. This was create using Adobe Photoshop.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Mascot Design</h3>
+                    <p>This is the mascot design for Art & Design subject. This was create using Adobe Animate.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> nkhalisah1304@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0165764186</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/nur.khalisah.7127"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/OnlyBts7Forever"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/nrkhalisah._/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@thexries"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
